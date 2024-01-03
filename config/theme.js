@@ -3,16 +3,16 @@ import colors from 'vuetify/lib/util/colors';
 
 const palette = {
   greenLeaf: {
-    primary: colors.green.base, // primary main
-    primarylight: colors.green.lighten4, // primary light
-    primarydark: colors.green.darken4, // primary dark
-    secondary: colors.blueGrey.base, // secondary main
-    secondarylight: colors.blueGrey.lighten4, // secondary light
-    secondarydark: colors.blueGrey.darken3, // secondary dark
-    accent: colors.cyan.base, // accent main
-    accentlight: colors.cyan.lighten4, // accent light
-    accentdark: colors.cyan.darken4, // accent dark
-    anchor: colors.green.base, // link
+    primary: colors.lightBlue.base, // primary main
+    primarylight: colors.lightBlue.lighten4, // primary light
+    primarydark: colors.lightBlue.darken4, // primary dark
+    secondary: colors.orange.base, // secondary main
+    secondarylight: colors.orange.lighten4, // secondary light
+    secondarydark: colors.orange.darken4, // secondary dark
+    accent: colors.indigo.accent4, // secondary main
+    accentlight: colors.indigo.lighten4, // secondary light
+    accentdark: colors.indigo.darken4, // secondary dark
+    anchor: colors.lightBlue.base, // link
   },
 };
 
