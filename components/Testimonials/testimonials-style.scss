@@ -1,11 +1,51 @@
 .testimonial-wrap {
   width: 100%;
   position: relative;
-  overflow: hidden
+  overflow: hidden;
+  .main-title {
+    display: block;
+    position: relative;
+    margin-bottom: 24px;
+
+    p.caption-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 36px;
+      line-height: 56px;
+    }
+  }
 }
 .carousel {
   margin-top: $spacing3
 }
 .item {
   padding: $spacing2
+}
+.v-theme--light {
+  .caption-title {
+    color: $palette-primary-dark;
+  }
+
+  h4 {
+    color: rgba(0, 0, 0, .87);
+
+  }
+}
+
+.v-theme--dark {
+  .caption-title {
+    color: $palette-primary-light;
+  }
+
+  h4 {
+    color: #fff;
+  }
+
 }

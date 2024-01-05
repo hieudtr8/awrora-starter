@@ -1,5 +1,5 @@
 <template>
-  <theme-wrapper theme="leaf">
+  <theme-wrapper theme="ocean">
     <v-app>
       <div>
         <main-header />

@@ -118,7 +118,7 @@ export default {
       smoothScroll({
         scrollTo: myEl, // scrollTo is also allowed to be number
         hash: `#${elemId}`, // required if updateHistory is true
-        offset: -100,
+        offset: -50,
       });
     }
 

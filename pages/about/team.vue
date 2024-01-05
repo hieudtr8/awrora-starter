@@ -17,7 +17,7 @@
     <div class="space-bottom-short">
       <photo-slider />
     </div>
-    <call-action />
+    <!-- <call-action /> -->
     <div id="footer">
       <main-footer />
     </div>

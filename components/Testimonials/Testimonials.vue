@@ -1,11 +1,12 @@
 <template>
   <div class="testimonial-wrap">
-    <h3 class="use-text-title text-center mb-4">
-      Testimonials
-    </h3>
-    <p class="use-text-subtitle2 text-center mb-4">
-      Curabitur egestas consequat lorem, vel fermentum augue porta id.
-    </p>
+    <div class="main-title text-center">
+      <p class="caption-title">
+        OUR CUSTOMERS SAID
+      </p> <h4>
+        They are doing great things with us
+      </h4>
+    </div>
     <div class="carousel">
       <splide :options="slickOptions">
         <splide-slide

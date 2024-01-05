@@ -3,7 +3,7 @@ const brand = {
     name: 'KiotCorp',
     desc: 'KiotCorp',
     prefix: '',
-    footerText: 'KiotCorp All Rights Reserved 2020',
+    footerText: 'KiotCorp All Rights Reserved 2023',
     logoText: 'KiotCorp',
     projectName: 'KiotCorp Landing Page',
     url: 'kiotcorp.com',

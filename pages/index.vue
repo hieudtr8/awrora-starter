@@ -6,41 +6,38 @@
         <div id="home">
           <banner-slider />
         </div>
-        <div
-          id="feature"
-          class="space-top space-bottom"
-        >
+        <div id="promotion">
+          <promotion />
+        </div>
+        <div id="feature">
           <v-container>
             <feature />
           </v-container>
         </div>
-        <div
-          id="counter"
-          class="page-section"
-        >
-          <counter dark />
+        <div id="benefit" class="page-section space-bottom-long">
+          <benefit />
         </div>
-        <div
-          id="testimonials"
-          class="space-top"
-        >
-          <Testimonials />
+        <div id="integration">
+          <integration />
         </div>
-        <div
+        <div id="map" class="space-top">
+          <MapMain />
+        </div>
+        <div id="testimonials" class="space-top">
+          <testimonials />
+        </div>
+        <!-- <div
           id="pricing"
           class="space-top"
         >
           <pricing />
-        </div>
-        <div
-          id="blog"
-          class="space-top space-bottom"
-        >
+        </div> -->
+        <!-- <div id="blog" class="space-top space-bottom">
           <blog />
-        </div>
-        <div id="subscribe">
+        </div> -->
+        <!-- <div id="subscribe">
           <subscribe />
-        </div>
+        </div> -->
       </div>
       <main-footer />
       <hidden point="smDown">
@@ -63,8 +60,11 @@ import { useI18n } from 'vue-i18n';
 import Header from '@/components/Header';
 import Hidden from '@/components/Hidden';
 import BannerSlider from '@/components/BannerSlider';
+import Promotion from '@/components/Promotion';
 import Feature from '@/components/Feature';
-import Counter from '@/components/Counter';
+import Benefit from '@/components/Benefit';
+import Integration from '@/components/Integration';
+import MapMain from '@/components/Map';
 import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing';
 import Blog from '@/components/Blog';
@@ -80,8 +80,11 @@ export default defineNuxtComponent({
     'main-header': Header,
     BannerSlider,
     Hidden,
+    Promotion,
     Feature,
-    Counter,
+    Benefit,
+    Integration,
+    MapMain,
     Testimonials,
     Pricing,
     Blog,

@@ -1,8 +1,103 @@
+.v-theme--light .root-banner {
+  background: #b3e5fc;
+  overflow: hidden;
+  position: relative;
+}
+.v-theme--dark .root-banner {
+  background: #01579b;
+  overflow: hidden;
+  position: relative;
+
+}
+.root-banner::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.55;
+}
+.v-theme--light .root-banner::before{
+  background-color: #fff;
+}
+.v-theme--dark .root-banner::before{
+  background-color: #000;
+}
+.inner-deco, .inner-deco .deco-wrap{
+  width: 100%;
+  position: absolute;
+  display: block;
+}
+.inner-deco{
+  height: 800px;
+}
+.inner-deco .deco-wrap{
+  height: 500px;
+  margin: 0;
+}
+.inner-deco .deco-wrap>div {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cloud-deco {
+  background-repeat: repeat-x;
+  background-position: center 80px;
+  position: absolute;
+  opacity: .5;
+  bottom: -320px;
+  @include breakpoints-down('xs') {
+    bottom: -580px;
+    right: -4px;
+  }
+}
+.v-theme--light .cloud-deco {
+  background-image: url('/images/starter/cloud_bottom_light.svg');
+}
+.v-theme--dark .cloud-deco {
+  background-image: url('/images/starter/cloud_bottom_dark.svg');
+}
 .banner-wrap {
   position: relative;
   display: block;
+  .cloud-top,.cloud-top-cover{
+    width: 100%;
+    height: 240px;
+    position: absolute;
+    transform: scale(1.1);
+    svg {
+      fill: #ecffff;
+      height: 100%;
+      width: 100%;
+      overflow: hidden;
+      z-index: 1;
+    }
+  }
+  .cloud-top {
+    top: 70%;
+    left: 20%;
+    @include breakpoints-down('xs') {
+      top: 76%;
+    }
+  }
+  .cloud-top-cover {
+    top: 68%;
+    left: -28%;
+    transform: rotateY(180deg);
+    @include breakpoints-down('xs') {
+      top: 78%;
+    }
+  }
 }
-
+.v-theme--dark {
+  .banner-wrap {
+    svg {
+      fill:#393939
+    }
+  }
+}
 .slide {
   position: relative;
   @include breakpoints-up('sm') {
@@ -15,17 +110,18 @@
 
 .img {
   @include right(1%);
-  max-width: 40%;
+  max-width: 100%;
   img {
     width: 100%;
+    z-index: 3;
   }
   @include breakpoints-up('sm') {
-    position: absolute;
-    top: 100px;
+    // position: absolute;
+    // top: 100px;
   }
   @include breakpoints-up('md') {
     @include right(10%);
-    max-width: 50%;
+    max-width: 100%;
   }
   @include breakpoints-down('xs') {
     margin: spacing(4, 0)
@@ -45,11 +141,15 @@
 
 .text {
   h4 {
-    font-weight: $font-bold;
+    font-weight: 600;
     margin-bottom: $spacing2;
+    z-index: 3;
   }
   h5 {
     @include palette-text-secondary
+  }
+  .v-btn {
+    z-index: 3;
   }
 }
 
@@ -61,6 +161,7 @@
     padding: $spacing1;
     flex: 1;
     font-weight: $font-regular;
+    z-index: 3;
     :deep(.v-btn__content) {
       flex-direction: column;
       align-items: flex-start;

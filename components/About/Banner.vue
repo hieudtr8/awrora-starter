@@ -1,7 +1,12 @@
 <template>
-  <div class="banner-wrap">
+  <div class="hero-banner-wrap">
     <div class="inner">
-      <v-container>
+      <div class="inner-deco">
+        <div class="deco-wrap">
+          <div class="cloud-deco" />
+        </div>
+      </div>
+      <v-container style="z-index: 1;">
         <v-row align="center" justify="center">
           <v-col lg="7" sm="6" class="px-5">
             <div class="text text-center text-sm-start">
@@ -15,7 +20,7 @@
           </v-col>
           <v-col lg="3" sm="6" class="px-5">
             <div class="img">
-              <img src="/images/starter/Illustration.png" alt="illustration">
+              <img src="/images/starter/about1.png" alt="illustration">
             </div>
           </v-col>
         </v-row>

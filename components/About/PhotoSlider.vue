@@ -89,7 +89,9 @@ export default {
       slickOptions: {
         pagination: false,
         arrows: false,
-        perPage: 3,
+        perPage: 1,
+        autoWidth: true,
+        autoHeight: true,
         perMove: 1,
         type: 'loop',
         reducedMotion: {
@@ -99,7 +101,7 @@ export default {
         },
         breakpoints: {
           800: {
-            perPage: 2,
+            perPage: 1,
           },
           600: {
             perPage: 1,

@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrap">
     <main-header />
-    <div class="space-top-short">
+    <div class="">
       <contact />
     </div>
     <main-footer />

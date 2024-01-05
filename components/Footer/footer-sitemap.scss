@@ -5,13 +5,14 @@
   text-transform: capitalize
 }
 .footer {
-  border-top: 1px solid;
-  @include palette-divider;
-  margin-top: $spacing4;
+  // margin-top: $spacing8;
   @include breakpoints-up(sm) {
-    margin-top: $spacing8;
-    padding-top: $spacing6;
+    // margin-top: $spacing8;
+    // padding-top: $spacing6;
     padding-bottom: $spacing6;
+  }
+  .use-text-subtitle2 {
+    font-weight: 600;
   }
   ul {
     margin: 0;
@@ -30,6 +31,9 @@
   }
   .body-2 {
     @include palette-text-secondary
+  }
+  .socmed .icon {
+    color: $palette-primary-main;
   }
 }
 .logo {
@@ -77,4 +81,11 @@
 }
 .accordion-icon {
   padding: 0
+}
+
+.v-theme--light .use-text-subtitle2 {
+  color: $palette-primary-main;
+}
+.v-theme--dark .use-text-subtitle2 {
+  color: $palette-primary-light;
 }

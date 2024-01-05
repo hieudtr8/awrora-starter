@@ -20,6 +20,7 @@
 .btn-tag {
   position: relative;
   cursor: pointer;
+
   label {
     display: inline-block;
     padding: 1px 6px;
@@ -31,10 +32,12 @@
     transition: all 0.3s ease;
     @include palette-background-default;
   }
+
   input {
     opacity: 0;
     position: absolute;
-    &:checked + label {
+
+    &:checked+label {
       color: $palette-common-white;
       background: $palette-primary-main;
     }
@@ -65,23 +68,29 @@
   display: flex;
   margin: $spacing4 auto;
   align-items: center;
+
   @include breakpoints-up(sm) {
     width: 600px;
   }
+
   :deep(fieldset) {
     height: 41px;
   }
+
   :deep(.v-field__field) {
     @include padding-left($spacing5);
     min-height: 0;
     margin-bottom: 0;
+
     input {
       max-height: none;
     }
   }
+
   :deep(.v-text-field__details) {
     display: none;
   }
+
   .search-icon {
     position: absolute;
     top: $spacing2;
@@ -91,4 +100,72 @@
 
 .apply-range {
   @include rtl-flip
+}
+
+.hero-banner-wrap {
+  @include use-theme(background, $palette-primary-main, $palette-primary-dark);
+  position: relative;
+  .inner-deco {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    display: block;
+
+    .deco-wrap {
+      height: 100%;
+      width: 100%;
+      display: block;
+      position: absolute;
+      margin: 0;
+
+      .cloud-deco {
+        @include use-theme(background-image, url("/images/starter/cloud_bottom_light.svg"), url("/images/starter/cloud_bottom_dark.svg"));
+        bottom: -120px;
+        background-size: 150%;
+        background-repeat: repeat-x;
+        background-position: bottom;
+        opacity: .5;
+        z-index: 1;
+
+        @media (max-width: 1279px) {
+          bottom: 150px;
+          background-size: 150%;
+        }
+        @media (min-width: 1800px) {
+          bottom: -180px;
+          background-size: 120%;
+        }
+      }
+    }
+
+    .deco-wrap>div {
+      height: 130%;
+      width: 100%;
+      display: block;
+      position: absolute;
+    }
+  }
+}
+
+.hero-banner-wrap:before {
+  @include use-theme(background, #fff, #000);
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: .5;
+}
+
+.hero-banner-wrap:after {
+  left: 0;
+  top: 380px;
+  @include use-theme(background-image, url("/images/starter/building_deco_light.png"), url("/images/starter/building_deco_dark.png"));
+  background-repeat: repeat-x;
+  background-position: bottom;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 150px;
 }

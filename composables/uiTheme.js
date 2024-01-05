@@ -12,7 +12,7 @@ export const useFooter = () => useState(
 );
 export const useCorner = () => useState(
   'corner',
-  () => 'chat', /* chat, nav */
+  () => 'nav', /* chat, nav */
 );
 
 const states = {

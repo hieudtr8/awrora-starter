@@ -1,6 +1,7 @@
-.banner-wrap {
+.hero-banner-wrap {
   position: relative;
   display: block;
+  background-color: $palette-primary-main;
   @include use-theme(background, $palette-primary-light, $palette-primary-dark);
   @include breakpoints-up('sm') {
     height: 600px;
@@ -8,8 +9,72 @@
   @include breakpoints-down('xs') {
     padding: spacing(12, 0, 5)
   }
+  .inner-deco {
+    height: 800px;
+    width: 100%;
+    position: absolute;
+    display: block;
+  }
+  .deco-wrap {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .deco-wrap>div {
+    height: 100%;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  .cloud-deco {
+    background-repeat: repeat-x;
+    background-position: bottom;
+    opacity: .5;
+    bottom: 100px;
+  }
+  .v-container:after {
+    background-repeat: repeat-x;
+    background-position: bottom;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    left: 0;
+    bottom: 0;
+  }
 }
-
+.hero-banner-wrap:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+}
+.v-theme--light { 
+  .hero-banner-wrap:before {
+    background: #fff;
+  }
+  .cloud-deco {
+    background-image: url("/images/starter/cloud_bottom_light.svg");
+  }
+  .v-container:after {
+    background-image: url("/images/starter/building_deco_light.png");
+  }
+}
+.v-theme--dark { 
+  .hero-banner-wrap:before {
+    background: #000;
+  }
+  .cloud-deco {
+    background-image: url("/images/starter/cloud_bottom_dark.svg");
+  }
+  .v-container:after {
+    background-image: url("/images/starter/building_deco_dark.png");
+  }
+}
 .slide {
   position: relative;
 }
@@ -30,7 +95,7 @@
     margin-top: $spacing3
   }
   img {
-    width: 310px;
+    width: 400px;
   }
 }
 

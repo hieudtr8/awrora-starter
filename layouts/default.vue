@@ -20,7 +20,7 @@
       alt="loading"
     >
   </div>
-  <theme-wrapper theme="green-leaf">
+  <theme-wrapper theme="ocean">
     <v-progress-linear
       v-model="loading"
       :active="loading < 100"

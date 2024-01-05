@@ -20,7 +20,7 @@
     </v-snackbar>
     <v-container class="inner-wrap">
       <v-row align="center">
-        <v-col md="6" cols="12" class="pe-md-0 wrap-deco">
+        <v-col md="12" cols="12" class="pe-md-0 wrap-deco">
           <v-card :class="{ 'map-form': full }" class="form-box">
             <div class="form">
               <div class="text-center">
@@ -92,7 +92,7 @@
             </div>
           </v-card>
         </v-col>
-        <v-col md="6" cols="12" class="ps-md-0">
+        <!-- <v-col md="6" cols="12" class="ps-md-0">
           <v-card :class="{ full: full }" class="map" raised>
             <GoogleMap
               :zoom="5"
@@ -141,7 +141,7 @@
               </MarkerCluster>
             </GoogleMap>
           </v-card>
-        </v-col>
+        </v-col> -->
       </v-row>
     </v-container>
   </div>
@@ -152,19 +152,19 @@
 </style>
 
 <script>
-import {
-  GoogleMap,
-  Marker,
-  MarkerCluster,
-  InfoWindow,
-} from 'vue3-google-map';
+// import {
+//   GoogleMap,
+//   Marker,
+//   MarkerCluster,
+//   InfoWindow,
+// } from 'vue3-google-map';
 
 export default {
   components: {
-    GoogleMap,
-    Marker,
-    MarkerCluster,
-    InfoWindow,
+    // GoogleMap,
+    // Marker,
+    // MarkerCluster,
+    // InfoWindow,
   },
   props: {
     full: {

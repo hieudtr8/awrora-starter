@@ -56,8 +56,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicons/favicon-16x16.png' },
         { rel: 'manifest', href: '/favicons/manifest.json' },
         // Fonts and Icons
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/icon?family=Material+Icons' },
         { rel: 'stylesheet', href: 'https://unpkg.com/ionicons@3.0.0/dist/css/ionicons.min.css' }
       ]
@@ -78,7 +77,7 @@ export default defineNuxtConfig({
   ],
   modules: [
     '@nuxtjs/i18n',
-    'vite-plugin-eslint'
+    'vite-plugin-eslint',
   ],
   i18n: {
     locales: languages,
@@ -113,7 +112,11 @@ export default defineNuxtConfig({
   build: {
     transpile: ['vuetify'],
     extend(config) {
-      config.performance.hints = false
+      config.performance.hints = false;
+      config.module.rules.push({
+        test: /\.svg$/,
+        use: 'raw-loader',
+      });
     },
   },
   devServer: {

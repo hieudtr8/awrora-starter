@@ -1,6 +1,6 @@
 <template>
   <nav class="user-menu">
-    <v-btn
+    <!-- <v-btn
       v-if="isDesktop"
       :href="link.starter.login"
       text
@@ -17,7 +17,7 @@
     <v-spacer
       v-if="isDesktop"
       class="vertical-divider"
-    />
+    /> -->
     <setting-menu v-if="loaded" />
   </nav>
 </template>

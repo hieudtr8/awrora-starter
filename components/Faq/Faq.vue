@@ -14,7 +14,7 @@
           </p>
           <hidden point="smDown">
             <div class="illustration">
-              <img src="/images/starter/Illustration.png" alt="illustration">
+              <img src="/images/starter/faq.png" alt="illustration">
             </div>
           </hidden>
         </v-col>

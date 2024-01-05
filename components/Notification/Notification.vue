@@ -5,7 +5,7 @@
     class="notification"
     location="left bottom"
   >
-    <div class="d-flex align-center me-2">
+    <div class="d-flex justify-item-between me-2">
       <div class="action me-2">
         {{ $t('common.notif_msg') }}
       </div>

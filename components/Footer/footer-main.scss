@@ -1,0 +1,142 @@
+.footer-counter {
+  position: relative;
+
+  .round {
+    content: "";
+    overflow: hidden;
+    position: absolute;
+    left: -10%;
+    border-radius: 50%;
+    top: -80px;
+    width: 120%;
+    height: 350px;
+  }
+
+  .round:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+
+  &.extend {
+    margin-top: 160px;
+    padding-top: 8px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: 600px) {
+    padding-bottom: 64px;
+  }
+}
+
+.footer-counter:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .8;
+}
+
+.footer-counter:after {
+  background: url("/images/starter/building_deco_footer.png") repeat-x bottom;
+  background-size: 50%;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+.building-deco {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+.v-theme--light {
+  .building-deco {
+    filter: brightness(1);
+  }
+
+}
+.v-theme--dark {
+  .building-deco {
+    filter: brightness(0.5);
+  }
+}
+img {
+  height: 120px;
+}
+
+.v-theme--light {
+  .footer-counter {
+    background-color: $palette-primary-light;
+
+    .round {
+      background: $palette-primary-light;
+    }
+
+    .round:after {
+      background: #fff;
+    }
+  }
+
+  .footer-counter:before {
+    background: #fff;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+  .footer-counter:after {
+    opacity: 1;
+  }
+}
+.v-theme--dark {
+  .footer-counter {
+    background-color: $palette-primary-dark;
+
+    .round {
+      background: $palette-primary-dark;
+    }
+
+    .round:after {
+      background: #303030;
+    }
+  }
+
+  .footer-counter:before {
+    background: #303030;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .8;
+  }
+  .footer-counter:after {
+    opacity: 0.3;
+  }
+}
+
+.footer {
+  @media(min-width: 600px) {
+    padding-bottom: 24px;
+    position: relative;
+    z-index: 11;
+  }
+}

@@ -1,0 +1,151 @@
+.map-wrap {
+  .root {
+    position: relative;
+    color: #fff;
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1280px;
+
+    @media (min-width: 1264px) {
+      max-width: 1185px;
+    }
+  }
+
+  .row {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin: 0 -12px;
+  }
+
+  .main-title {
+    display: block;
+    position: relative;
+    margin-bottom: 24px;
+
+    p.caption-title {
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 0;
+    }
+
+    h4 {
+      font-weight: bold;
+      text-transform: capitalize;
+      font-size: 36px;
+      line-height: 56px;
+    }
+  }
+
+  .world-map {
+    background: url("/images/starter/worldMap.svg") no-repeat 50%;
+    background-size: 100%;
+    position: relative;
+    margin: 0 auto;
+    height: 360px;
+    width: 580px;
+
+    .location-wrap {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+
+      .location-item {
+        position: absolute;
+
+        button.v-btn {
+          width: 0px;
+          height: 0px;
+
+          :deep(i.mdi::before) {
+            border-radius: 3px;
+            display: block;
+            width: 12px;
+            height: 12px;
+            transition: all .3s ease-out;
+          }
+          &.primary {
+            :deep(i.mdi::before) {
+              color: $palette-primary-main;
+            }
+          }
+          &.secondary {
+            :deep(i.mdi::before) {
+              color: $palette-secondary-main;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .text {
+    padding-top: 40px;
+    text-align: start;
+
+    h3 {
+      font-weight: bold;
+
+      span {
+        margin-right: 8px;
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        border-radius: 3px;
+      }
+
+      &.title-primary {
+        color: $palette-primary-main;
+
+        span {
+          background: linear-gradient($palette-primary-light, $palette-primary-main);
+        }
+      }
+
+      &.title-secondary {
+        color: $palette-secondary-main;
+
+        span {
+          background: linear-gradient($palette-secondary-light, $palette-secondary-main);
+        }
+      }
+
+    }
+
+    p {
+      // color: #000;
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+}
+
+.v-theme--light {
+  .caption-title {
+    color: $palette-primary-dark;
+  }
+
+  h4 {
+    color: rgba(0, 0, 0, .87);
+  }
+  .map-wrap .text {
+    color: #000;
+  }
+}
+
+.v-theme--dark {
+  .caption-title {
+    color: $palette-primary-light;
+  }
+
+  h4 {
+    color: #fff;
+  }
+  .map-wrap .text {
+    color: #fff;
+  }
+}

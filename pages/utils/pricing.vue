@@ -1,7 +1,7 @@
 <template>
   <div class="main-wrap">
     <main-header />
-    <div class="space-top">
+    <div class="padding-top">
       <pricing />
     </div>
     <div class="space-top-short">

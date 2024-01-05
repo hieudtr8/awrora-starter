@@ -82,6 +82,7 @@ $flag: '/images/flag-logo.png';
     .vertical-divider {
       min-height: $spacing3;
     }
+    box-shadow: 0 1px 36px -16px $palette-primary-main !important;
     :deep(.logo) {
       img {
         height: 32px;
@@ -91,6 +92,7 @@ $flag: '/images/flag-logo.png';
     nav {
       padding: 0;
     }
+    
   }
   &.no-shadow {
     box-shadow: none !important
@@ -142,6 +144,8 @@ $flag: '/images/flag-logo.png';
 
 .nav-menu {
   width: 100%;
+  font-size: 16px;
+
   @include breakpoints-down(xs) {
     justify-content: space-between
   }
@@ -201,6 +205,7 @@ $flag: '/images/flag-logo.png';
   .v-btn:not(.v-btn--round) {
     margin: spacing(0, 0.5);
     padding: $spacing1;
+    font-size: 16px;
   }
 }
 

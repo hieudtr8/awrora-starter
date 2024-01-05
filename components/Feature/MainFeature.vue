@@ -1,69 +1,74 @@
 <template>
   <div class="page-section">
-    <v-row>
+    <div class="main-title text-center">
+      <p class="caption-title">
+        FEATURE
+      </p>
+      <h4 class="">
+        All You Need To Grow Online.
+      </h4>
+    </div>
+    <v-row class="row-features spacing6">
       <v-col
-        class="px-6"
         sm="4"
         cols="12"
       >
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-anchor
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
-          <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+          <figure>
+            <v-icon
+              color="primary"
+              class="icon"
+            >
+              mdi-cog-outline
+            </v-icon>
+          </figure>
+          <h6 class="use-text-subtitle2">
+            Easy to customize
+          </h6>
+          <p class="use-text-paragraph">
+            Perfect domain name allows you to present your brand in the best light.
           </p>
         </div>
       </v-col>
       <v-col
-        class="px-6"
         sm="4"
         cols="12"
       >
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-tennis
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
-          <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+          <figure>
+            <v-icon
+              color="primary"
+              class="icon"
+            >
+              mdi-transit-connection-variant
+            </v-icon>
+          </figure>
+          <h6 class="use-text-subtitle2">
+            Build It
+          </h6>
+          <p class="use-text-paragraph">
+            Our powerful, reliable web hosting backs your site on a stable & secure platform.
           </p>
         </div>
       </v-col>
       <v-col
-        class="px-6"
         sm="4"
         cols="12"
       >
         <div class="feature-list">
-          <v-icon
-            color="primary"
-            class="icon"
-          >
-            mdi-gamepad-variant
-          </v-icon>
-          <h5 class="text-h5">
-            Lorem ipsum dolor
-          </h5>
-          <p class="text-body-1">
-            Quos blanditiis tenetur unde suscipit,
-            quam beatae rerum inventore consectetur,
-            neque doloribus.
+          <figure>
+            <v-icon
+              color="primary"
+              class="icon"
+            >
+              mdi-face-agent
+            </v-icon>
+          </figure>
+          <h6 class="use-text-subtitle2">
+            24/7 Supports
+          </h6>
+          <p class="use-text-paragraph">
+            24/7/365 Premium Support via Phone, Live Chat and Online Support Portal.
           </p>
         </div>
       </v-col>

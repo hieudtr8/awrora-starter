@@ -144,11 +144,13 @@
   },
   starter: {
     "header_feature": "feature",
+    "header_promotion": "promotion",
+    "header_benefit": "benefits",
     "header_testimonials": "testimonials",
     "header_pricing": "pricing",
     "header_blog": "blog",
     "header_subscribe": "subscribe",
-    "banner_title": "Welcome to Starter Project",
-    "banner_subtitle": "Create your project from scratch with main components and basic styles."
+    "banner_title": "The best web hosting service for you website",
+    "banner_subtitle": "Web hosting made easy & affordable! FREE Get Your Domain On! 1 Year Domain Registration on Shared Annual Plans."
   }
 }

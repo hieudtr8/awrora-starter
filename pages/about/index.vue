@@ -5,7 +5,6 @@
     <div class="space-top-short">
       <company-logo />
     </div>
-    <counter />
     <div class="space-top-short">
       <v-container>
         <v-row>

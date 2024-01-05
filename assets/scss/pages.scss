@@ -24,8 +24,20 @@
     margin-top: section-margin(6px);
   }
 }
+.padding-top {
+  padding-top: section-margin($spacing1);
+}
+.padding-top-long {
+  padding-top: section-margin($spacing2);
+}
+.space-bottom-long {
+  margin-bottom: section-margin($spacing2);
+}
 .space-bottom-short {
   margin-bottom: section-margin($spacing1 * 0.5);
+}
+.space-top-long {
+  margin-top: section-margin($spacing2);
 }
 .space-top-short {
   margin-top: section-margin($spacing1 * 0.5);

@@ -67,7 +67,7 @@
     .v-theme--light & {
       color: $palette-secondary-dark
     }
-    font-family: 'Roboto Condensed';
+    font-family: "Montserrat",sans-serif;
     @include breakpoints-down(xs) {
       font-size: 28px !important;
       margin-bottom: $spacing2
