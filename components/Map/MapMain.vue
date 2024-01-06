@@ -95,7 +95,6 @@ export default {
     };
   },
   created() {
-    console.log(this.locations);
   },
 };
 </script>

@@ -228,7 +228,6 @@ export default {
   },
   methods: {
     handleAfterChange(slide) {
-      console.log('🌊 | file: BannerSlider.vue:231 | slide:', slide);
       this.currentSlide = slide.index;
     },
     gotoSlide(index) {

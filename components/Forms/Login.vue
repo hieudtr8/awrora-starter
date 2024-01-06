@@ -108,9 +108,8 @@ export default {
   },
   methods: {
     handleSubmit() {
-      if (this.$refs.form.validate()) {
-        console.log('data submited');
-      }
+      // if (this.$refs.form.validate()) {
+      // }
     },
   },
 };

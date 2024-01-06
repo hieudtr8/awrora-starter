@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main-wrap">
     <main-header />
     <div class="container-wrap">
       <search v-model="keyword" />

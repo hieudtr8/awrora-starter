@@ -128,7 +128,6 @@ export default {
   },
   mounted() {
     const section = document.querySelectorAll('.scroll-nav-content > *');
-    console.log('🌊 | file: MegaMenu.vue:131 | section:', section);
     Array.prototype.forEach.call(section, (e) => {
       this.sections[e.id] = e.offsetTop;
     });

@@ -4,6 +4,7 @@
 .main-wrap {
   position: relative;
   width: 100%;
+  overflow: hidden;
   @include palette-text-primary;
   .v-theme--dark & {
     background-color: $dark-background-default;

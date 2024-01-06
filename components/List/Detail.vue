@@ -125,7 +125,6 @@ export default {
   },
   methods: {
     showImg(index) {
-      console.log('ancur2an');
       this.index = index;
       this.visible = true;
     },
