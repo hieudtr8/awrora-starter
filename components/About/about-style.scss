@@ -32,6 +32,7 @@
     background-position: bottom;
     opacity: .5;
     bottom: 100px;
+    @include use-theme(background-image, url("/images/starter/cloud_bottom_light.svg"), url("/images/starter/cloud_bottom_dark.svg"))
   }
   .v-container:after {
     background-repeat: repeat-x;
@@ -42,6 +43,8 @@
     height: 150px;
     left: 0;
     bottom: 0;
+    @include use-theme(background-image, url("/images/starter/building_deco_light.png"), url("/images/starter/building_deco_dark.png"))
+
   }
 }
 .hero-banner-wrap:before {
@@ -52,28 +55,7 @@
   top: 0;
   left: 0;
   opacity: .5;
-}
-.v-theme--light { 
-  .hero-banner-wrap:before {
-    background: #fff;
-  }
-  .cloud-deco {
-    background-image: url("/images/starter/cloud_bottom_light.svg");
-  }
-  .v-container:after {
-    background-image: url("/images/starter/building_deco_light.png");
-  }
-}
-.v-theme--dark { 
-  .hero-banner-wrap:before {
-    background: #000;
-  }
-  .cloud-deco {
-    background-image: url("/images/starter/cloud_bottom_dark.svg");
-  }
-  .v-container:after {
-    background-image: url("/images/starter/building_deco_dark.png");
-  }
+  @include use-theme(background, #fff, #000)
 }
 .slide {
   position: relative;

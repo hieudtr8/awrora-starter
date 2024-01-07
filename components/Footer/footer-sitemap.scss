@@ -13,6 +13,7 @@
   }
   .use-text-subtitle2 {
     font-weight: 600;
+    @include use-theme(color, $palette-primary-dark, $palette-primary-light)
   }
   ul {
     margin: 0;
@@ -81,11 +82,4 @@
 }
 .accordion-icon {
   padding: 0
-}
-
-.v-theme--light .use-text-subtitle2 {
-  color: $palette-primary-main;
-}
-.v-theme--dark .use-text-subtitle2 {
-  color: $palette-primary-light;
 }

@@ -78,7 +78,11 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/i18n',
     'vite-plugin-eslint',
+    '@nuxtjs/svg-sprite',
   ],
+  svgSprite: {
+    // input: '@/assets/images/svg/'
+  },
   i18n: {
     locales: languages,
     lazy: true,

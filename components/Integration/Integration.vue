@@ -13,21 +13,7 @@
                 >
                   <div>
                     <figure class="illustration">
-                      <svg width="7px" height="128px" class="droplet secondary-color" viewBox="0 0 7 128" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <g id="main" stroke="none" stroke-width="1" fill-rule="evenodd">
-                          <g transform="translate(-407.000000, -3715.000000)">
-                            <g transform="translate(170.000000, 3715.000000)">
-                              <g id="Left" transform="translate(32.000000, 0.000000)">
-                                <g id="droplet" transform="translate(205.444444, 0.000000)">
-                                  <rect id="Rectangle" x="-1.26565425e-14" y="80" width="6" height="48" rx="3" />
-                                  <rect id="Rectangle" x="1.01030295e-13" y="35" width="6" height="28" rx="3" />
-                                  <rect id="Rectangle" x="1.01030295e-13" y="0" width="6" height="20.5" rx="3" />
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
+                      <svg-icon name="droplet" class="droplet secondary-color" />
                       <img
                         src="/images/starter/integration1.png"
                         alt="background" class="img-2d3d"
@@ -51,21 +37,7 @@
                 >
                   <div>
                     <figure class="illustration">
-                      <svg width="7px" height="128px" viewBox="0 0 7 128" class="droplet primary-color">
-                        <g id="main" stroke="none" stroke-width="1" fill-rule="evenodd">
-                          <g transform="translate(-407.000000, -3715.000000)">
-                            <g transform="translate(170.000000, 3715.000000)">
-                              <g id="Left" transform="translate(32.000000, 0.000000)">
-                                <g id="droplet" transform="translate(205.444444, 0.000000)">
-                                  <rect id="Rectangle" x="-1.26565425e-14" y="80" width="6" height="48" rx="3" />
-                                  <rect id="Rectangle" x="1.01030295e-13" y="35" width="6" height="28" rx="3" />
-                                  <rect id="Rectangle" x="1.01030295e-13" y="0" width="6" height="20.5" rx="3" />
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
+                      <svg-icon name="droplet" class="droplet primary-color" />
                       <img
                         src="/images/starter/integration2.png"
                         alt="background" class="img-2d3d"

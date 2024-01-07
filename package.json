@@ -1,7 +1,7 @@
 {
   "name": "stater-project",
   "version": "2.0.0",
-  "description": "Awrora VueJs Starter Project",
+  "description": "KiotCorp Landing Page",
   "keywords": [
     "starter kit",
     "empty project",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "@mdi/font": "^7.0.96",
+    "@nuxtjs/svg-sprite": "^1.0.2",
     "@splidejs/vue-splide": "^0.6.12",
     "raw-loader": "^4.0.2",
     "rtl-sass": "^1.5.0",
@@ -51,5 +52,8 @@
     "prettier": "^2.8.4",
     "sass": "^1.58.3",
     "vite-plugin-eslint": "^1.8.1"
+  },
+  "engines": {
+    "node": ">=16"
   }
 }

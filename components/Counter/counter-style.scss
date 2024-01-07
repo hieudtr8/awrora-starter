@@ -17,13 +17,8 @@
   h3 {
     margin-bottom: 16px;
     font-weight: bold;
+    @include use-theme(color, $palette-primary-dark, $palette-primary-light)
   }
-}
-.v-theme--light h3{
-  color: $palette-primary-dark;
-}
-.v-theme--dark h3{
-  color: $palette-primary-light;
 }
 #watched_counter {
   position: absolute;

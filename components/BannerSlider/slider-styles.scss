@@ -1,14 +1,10 @@
-.v-theme--light .root-banner {
+.root-banner {
   background: #b3e5fc;
   overflow: hidden;
   position: relative;
+  @include use-theme(background, #b3e5fc, #01579b)
 }
-.v-theme--dark .root-banner {
-  background: #01579b;
-  overflow: hidden;
-  position: relative;
 
-}
 .root-banner::before {
   content: "";
   width: 100%;
@@ -17,12 +13,7 @@
   top: 0;
   left: 0;
   opacity: 0.55;
-}
-.v-theme--light .root-banner::before{
-  background-color: #fff;
-}
-.v-theme--dark .root-banner::before{
-  background-color: #000;
+  @include use-theme(background, #fff, #000)
 }
 .inner-deco, .inner-deco .deco-wrap{
   width: 100%;
@@ -52,12 +43,7 @@
     bottom: -580px;
     right: -4px;
   }
-}
-.v-theme--light .cloud-deco {
-  background-image: url('/images/starter/cloud_bottom_light.svg');
-}
-.v-theme--dark .cloud-deco {
-  background-image: url('/images/starter/cloud_bottom_dark.svg');
+  @include use-theme(background-image, url('/images/starter/cloud_bottom_light.svg'), url('/images/starter/cloud_bottom_dark.svg'))
 }
 .banner-wrap {
   position: relative;

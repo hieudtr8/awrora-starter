@@ -23,11 +23,11 @@
     margin-bottom: 15px;
 
     .caption-title {
-      color: $palette-primary-dark;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 16px;
       margin-bottom: 0;
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light)
     }
 
     h4 {
@@ -145,14 +145,6 @@
       width: 100%
     }
   }
-}
-
-.v-theme--light .caption-title {
-  color: $palette-primary-dark;
-}
-
-.v-theme--dark .caption-title {
-  color: $palette-primary-light;
 }
 
 #feature1 {
