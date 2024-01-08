@@ -43,6 +43,9 @@
     bottom: -580px;
     right: -4px;
   }
+  @media (max-width:360px) {
+    bottom: -640px;
+  }
   @include use-theme(background-image, url('/images/starter/cloud_bottom_light.svg'), url('/images/starter/cloud_bottom_dark.svg'))
 }
 .banner-wrap {
@@ -67,6 +70,9 @@
     @include breakpoints-down('xs') {
       top: 76%;
     }
+    @media (max-width:360px) {
+      top: 82%;
+    }
   }
   .cloud-top-cover {
     top: 68%;
@@ -74,6 +80,9 @@
     transform: rotateY(180deg);
     @include breakpoints-down('xs') {
       top: 78%;
+    }
+    @media (max-width:360px) {
+      top: 82%;
     }
   }
 }

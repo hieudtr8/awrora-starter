@@ -40,8 +40,10 @@
       left : -350px;
       top: -120px;
       position: absolute;
-      @include use-theme(fill, $palette-primary-light, $palette-primary-main);
-      @include use-theme(opacity, 0.25, 0.12);
+      svg {
+        @include use-theme(fill, $palette-primary-light, $palette-primary-main);
+        @include use-theme(opacity, 0.25, 0.12);
+      }
 
       .big {
         left: 80px;
@@ -338,7 +340,6 @@
 .form-control-label {
   a {
     position: relative;
-    top: -20px
   }
 
   >div {
@@ -388,4 +389,31 @@
   color: #607D8B;
   @include margin-right($spacing1);
   font-size: 16px;
+}
+:deep(.v-snackbar--variant-elevated) {
+  background-color: $palette_primary_main;
+  color: #fff;
+  min-width: 260px !important;
+  .action {
+    font-weight: 600;
+  }
+}
+.notification {
+  display: flex;
+  position: relative;
+  button {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: -13px;
+    right: -15px;
+    .v-btn__content {
+      i {
+        font-size: 0.5em;
+      }
+      i::before {
+        font-size: 12px;
+      }
+    }
+  }
 }

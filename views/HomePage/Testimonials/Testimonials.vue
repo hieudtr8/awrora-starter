@@ -18,6 +18,7 @@
               :text="item.text"
               :avatar="item.avatar"
               :name="item.name"
+              class="testi-card"
             />
           </div>
         </splide-slide>
@@ -33,7 +34,7 @@
 <script>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
 import imgAPI from '@/assets/images/imgAPI';
-import TestiCard from '../Cards/TestiCard';
+import TestiCard from '@/components/Cards/TestiCard';
 
 export default {
   components: {
@@ -44,6 +45,16 @@ export default {
   data() {
     return {
       testiContent: [
+        {
+          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+          avatar: imgAPI.avatar[10],
+          name: 'Alex Tebalek - CTO La Lieur',
+        },
+        {
+          text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
+          avatar: imgAPI.avatar[10],
+          name: 'Alex Tebalek - CTO La Lieur',
+        },
         {
           text: 'Sed imperdiet enim ligula, vitae viverra justo porta vel.',
           avatar: imgAPI.avatar[10],
@@ -92,6 +103,9 @@ export default {
         arrows: false,
         type: 'loop',
         breakpoints: {
+          360: {
+            perPage: 1,
+          },
           600: {
             perPage: 2,
           },

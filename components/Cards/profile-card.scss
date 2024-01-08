@@ -37,6 +37,11 @@
       margin: 0 32px;
     }
   }
+  @media (max-width:360px) {
+    .button-connection, .button-albums {
+      display: none;
+    }
+  }
 }
 
 .action {

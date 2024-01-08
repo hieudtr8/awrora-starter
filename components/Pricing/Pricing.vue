@@ -17,6 +17,7 @@
           class="px-5"
         >
           <pricing-card
+            class="pricing-card"
             :title="tier.title"
             :subheader="tier.subheader"
             :price="tier.price"

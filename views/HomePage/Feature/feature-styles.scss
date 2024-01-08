@@ -122,6 +122,9 @@
     max-width: 98%;
     img {
       width: 80%;
+      @media (max-width: 360px) {
+        width: 120%;
+      }
     }
     margin: 0px auto;
 

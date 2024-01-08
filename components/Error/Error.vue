@@ -2,14 +2,7 @@
   <div class="error-wrap">
     <v-container class="max-md">
       <v-row align="center">
-        <v-col cols="12" md="5">
-          <div class="flex">
-            <div class="illustration">
-              <img src="/images/starter/Illustration.png" alt="illustration">
-            </div>
-          </div>
-        </v-col>
-        <v-col cols="12" md="7">
+        <v-col cols="12">
           <div class="text">
             <h1 class="text-h1 font-weight-bold">
               {{ errCode }}

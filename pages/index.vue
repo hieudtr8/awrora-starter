@@ -16,12 +16,12 @@
         </div>
         <div id="benefit" class="page-section space-bottom-long">
           <benefit />
-        </div>
-        <div id="integration">
-          <integration />
-        </div>
-        <div id="map" class="space-top">
-          <MapMain />
+          <div id="integration">
+            <integration />
+          </div>
+          <div id="map" class="space-top">
+            <MapMain />
+          </div>
         </div>
         <div id="testimonials" class="space-top">
           <testimonials />
@@ -57,15 +57,17 @@
 <script>
 import { onMounted } from 'vue';
 import { useI18n } from 'vue-i18n';
+
+import Promotion from '@/views/HomePage/Promotion';
+import Feature from '@/views/HomePage/Feature';
+import Benefit from '@/views/HomePage/Benefit';
+import Integration from '@/views/HomePage/Integration';
+import MapMain from '@/views/HomePage/Map';
+import Testimonials from '@/views/HomePage/Testimonials';
+
 import Header from '@/components/Header';
 import Hidden from '@/components/Hidden';
 import BannerSlider from '@/components/BannerSlider';
-import Promotion from '@/components/Promotion';
-import Feature from '@/components/Feature';
-import Benefit from '@/components/Benefit';
-import Integration from '@/components/Integration';
-import MapMain from '@/components/Map';
-import Testimonials from '@/components/Testimonials';
 import Pricing from '@/components/Pricing';
 import Blog from '@/components/Blog';
 import Subscribe from '@/components/Subscribe';

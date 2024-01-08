@@ -36,6 +36,9 @@
   .socmed .icon {
     color: $palette-primary-main;
   }
+  @media (max-width:600px) {
+    padding-bottom: $spacing6;
+  }
 }
 .logo {
   text-align: center;

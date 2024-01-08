@@ -1,9 +1,9 @@
 <template>
-  <client-only>
-    <MqResponsive :target="breakpoints">
-      <slot />
-    </MqResponsive>
-  </client-only>
+  <!-- <client-only> -->
+  <MqResponsive :target="breakpoints">
+    <slot />
+  </MqResponsive>
+  <!-- </client-only> -->
 </template>
 
 <script>

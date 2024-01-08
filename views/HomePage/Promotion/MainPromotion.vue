@@ -15,7 +15,7 @@
                         </v-icon>
                       </section>
                     </v-col>
-                    <v-col cols="12" sm="6" md="7" lg="7">
+                    <v-col class="text-container" cols="12" sm="6" md="7" lg="7">
                       <div class="text">
                         <h1 class="use-text-title2">
                           <v-btn color="secondary" variant="text" class="px-0">
@@ -56,7 +56,7 @@
                         </v-icon>
                       </section>
                     </v-col>
-                    <v-col cols="12" sm="6" md="7" lg="7">
+                    <v-col class="text-container" cols="12" sm="6" md="7" lg="7">
                       <div class="text">
                         <h1 class="use-text-title2">
                           <v-btn color="secondary" variant="text" class="px-0">
@@ -94,7 +94,7 @@
                         </v-icon>
                       </section>
                     </v-col>
-                    <v-col cols="12" sm="6" md="7" lg="7">
+                    <v-col class="text-container" cols="12" sm="6" md="7" lg="7">
                       <div class="text">
                         <h1 class="use-text-title2">
                           <v-btn color="secondary" variant="text" class="px-0">

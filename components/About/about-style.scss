@@ -78,6 +78,9 @@
   }
   img {
     width: 400px;
+    @media (max-width:360px) {
+      width: 260px;
+    }
   }
 }
 
@@ -91,9 +94,15 @@
   h4 {
     font-weight: $font-bold;
     margin-bottom: $spacing2;
+    @media (max-width:360px) {
+      font-size: 1.5rem !important;;
+    }
   }
   h5 {
-    @include palette-text-secondary
+    @include palette-text-secondary;
+    @media (max-width:360px) {
+      font-size: 1rem !important;;
+    }
   }
 }
 

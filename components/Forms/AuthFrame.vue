@@ -19,10 +19,6 @@
                 <h6 class="use-text-subtitle2">
                   {{ subtitle }}
                 </h6>
-                <div class="img">
-                  <img v-if="type === 'login'" src="/images/starter/Illustration.png" alt="illustration">
-                  <img v-else src="/images/starter/Illustration.png" alt="illustration">
-                </div>
               </div>
             </hidden>
           </v-col>

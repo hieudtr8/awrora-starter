@@ -46,21 +46,21 @@
       </div>
       <div class="action-area">
         <v-card-actions class="action">
-          <v-btn text>
+          <v-btn text class="button-connection">
             <v-icon class="icon">
               mdi-account-multiple
             </v-icon>
             {{ connection }}
             Connection
           </v-btn>
-          <v-btn text>
+          <v-btn text class="button-favourite">
             <v-icon class="icon">
               mdi-heart
             </v-icon>
             {{ favorites }}
             Favorites
           </v-btn>
-          <v-btn text>
+          <v-btn text class="button-albums">
             <v-icon class="icon">
               mdi-folder-multiple-image
             </v-icon>

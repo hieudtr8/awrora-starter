@@ -36,9 +36,9 @@
                     :key="index"
                     class="use-text-subtitle2 mb-4"
                   >
-                    <nuxt-link :to="footer.link[index]">
+                    <a :href="footer.link[index]">
                       {{ item }}
-                    </nuxt-link>
+                    </a>
                   </li>
                 </ul>
               </v-expansion-panel-text>
@@ -61,9 +61,9 @@
                   v-for="(item, index) in footer.description"
                   :key="index"
                 >
-                  <nuxt-link :to="footer.link[index]">
+                  <a :href="footer.link[index]">
                     {{ item }}
-                  </nuxt-link>
+                  </a>
                 </li>
               </ul>
             </v-col>
@@ -118,7 +118,7 @@
             prepend-inner-icon="mdi-web"
             @update:model-value="switchLang(lang)"
           />
-          <p v-if="isMobile" class="body-2 text-center">
+          <p v-if="isMobile" class="body-2 text-center" style="z-index: 10; position: relative;">
             &copy;&nbsp;
             {{ brand.starter.footerText }}
           </p>
@@ -139,7 +139,7 @@ import { useSwitchLocalePath } from 'vue-i18n-routing';
 import { setRtl } from '@/composables/uiTheme';
 import brand from '@/assets/text/brand';
 import Logo from '../Logo';
-import { navigateTo } from '#app';
+import { navigateTo, useRouter } from '#app';
 
 export default {
   components: {
@@ -147,6 +147,7 @@ export default {
   },
   setup() {
     const switchLocalePath = useSwitchLocalePath();
+    const router = useRouter();
 
     const i18n = useI18n();
     const curLang = i18n.locale.value;
@@ -167,11 +168,14 @@ export default {
         document.documentElement.setAttribute('dir', 'ltr');
       }
     }
-
+    function handleNavigate(link) {
+      router.push(link);
+    }
     return {
       curLang,
       switchLang,
       lang,
+      handleNavigate,
     };
   },
   data: () => ({
@@ -179,23 +183,13 @@ export default {
     footers: [
       {
         title: 'company',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#', '#', '#', '#'],
+        description: ['About', 'Team', 'Contact us'],
+        link: ['/about', '/about/team', '/contact'],
       },
       {
-        title: 'resources',
-        description: [
-          'Resource',
-          'Resource name',
-          'Another resource',
-          'Final resource',
-        ],
-        link: ['#', '#', '#', '#'],
-      },
-      {
-        title: 'legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: ['#', '#'],
+        title: 'utilities',
+        description: ['Pricing', 'FAQ', 'Contact us'],
+        link: ['/utils/pricing', '/utils/faq', '/contact'],
       },
     ],
   }),

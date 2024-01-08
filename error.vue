@@ -1,13 +1,12 @@
 <template>
   <theme-wrapper theme="ocean">
     <v-app>
-      <div>
+      <div class="main-wrap">
         <main-header />
         <Error
           error-code="errObj.statusCode"
           :text="$t('common.404')"
         />
-        <main-footer />
       </div>
     </v-app>
   </theme-wrapper>

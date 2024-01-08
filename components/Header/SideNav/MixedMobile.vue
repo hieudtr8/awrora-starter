@@ -3,9 +3,8 @@
     <v-list-item
       v-for="(item, index) in menuPrimary"
       :key="index"
-      :href="item.link"
-      :class="{ current: curURL === (curOrigin+langPath+item.link)}"
-      link
+      :class="{ active: activeMenu === item.name }"
+      @click="scrollToMyEl(item.name)"
     >
       <div>
         <v-list-item-title class="menu-list">
@@ -44,21 +43,6 @@
     </v-list-group>
   </v-list>
   <v-divider />
-  <v-list dense>
-    <v-list-item
-      v-for="(item, index) in ['login', 'register']"
-      :key="index"
-      :href="'/' + item"
-      :class="{ current: curURL === (curOrigin+langPath+item)}"
-      link
-    >
-      <div>
-        <v-list-item-title class="menu-list">
-          {{ $t('common.header_'+item) }}
-        </v-list-item-title>
-      </div>
-    </v-list-item>
-  </v-list>
 </template>
 
 <style scoped lang="scss">
@@ -66,6 +50,8 @@
 </style>
 
 <script>
+import { inject } from 'vue';
+import { useRouter } from '#app';
 export default {
   props: {
     menuPrimary: {
@@ -76,6 +62,31 @@ export default {
       type: Array,
       required: true,
     },
+    activeMenu: {
+      type: String,
+      required: true,
+    },
+  },
+  setup() {
+    const smoothScroll = inject('smoothScroll');
+    const router = useRouter();
+    function scrollToMyEl(elemId) {
+      const myEl = document.getElementById(elemId);
+      if (myEl) {
+        router.push(`#${elemId}`);
+        smoothScroll({
+          scrollTo: myEl,
+          hash: `#${elemId}`,
+          offset: -80,
+        });
+      } else {
+        window.location.href = '/';
+      }
+    }
+
+    return {
+      scrollToMyEl,
+    };
   },
   data() {
     return {
@@ -89,6 +100,11 @@ export default {
     this.curURL = window.location.href;
     this.curOrigin = window.location.origin;
     this.langPath = '/' + this.$i18n.locale;
+  },
+  methods: {
+    test() {
+
+    },
   },
 };
 </script>

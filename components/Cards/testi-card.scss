@@ -1,10 +1,24 @@
 .card {
   padding: $spacing3;
+  display: flex;
   &-pricing {
-    display: flex;
     justify-content: center;
     align-items: baseline;
     margin-bottom: $spacing2;
+  }
+  .use-text-paragraph {
+    height: 100px;
+    @media (max-width: 900px) {
+      height: 150px;
+    }
+    @media (max-width: 600px) {
+      height: 200px;
+    }
+  }
+  &.testi-card  {
+    align-items: start;
+    flex-direction: column;
+    justify-content:space-evenly;
   }
 }
 .name {

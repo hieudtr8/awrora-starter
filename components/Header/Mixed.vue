@@ -9,6 +9,7 @@
     <mobile-menu
       :menu-primary="menuPrimary"
       :menu-secondary="menuSecondary"
+      :active-menu="activeMenu"
     />
   </v-navigation-drawer>
   <v-app-bar
